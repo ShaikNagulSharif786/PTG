@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text to Image - RunwayML</title>
+</head>
+<body>
+    <h1>AI Image Generator</h1>
+
+    {% if error %}
+        <p style="color: red;">{{ error }}</p>
+    {% endif %}
+
+    <form method="POST">
+        <textarea name="prompt" rows="4" cols="50" placeholder="Enter a description for the image..."></textarea><br><br>
+        <button type="submit">Generate Image</button>
+    </form>
+
+    {% if image %}
+        <h2>Generated Image:</h2>
+        <img src="{{ image }}" alt="AI generated image" style="max-width:512px; border:1px solid #ccc;"><br><br>
+        <a href="{{ image }}" download="generated_image.png">Download Image</a>
+    {% endif %}
+</body>
+</html>
