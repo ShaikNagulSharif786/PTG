@@ -18,7 +18,7 @@ def index():
         text = request.form.get("text")
 
         if not text.strip():
-            return render_template("index.html", error="Please enter some text.")
+            return render_template("txtvoi.html", error="Please enter some text.")
 
         # ElevenLabs API URL
         url = f"https://api.elevenlabs.io/v1/text-to-speech/{VOICE_ID}"
@@ -40,7 +40,7 @@ def index():
         )
 
         if response.status_code != 200:
-            return render_template("index.html", error=f"API Error: {response.text}")
+            return render_template("txtvoi.html", error=f"API Error: {response.text}")
 
         # Save audio in memory
         audio_data = BytesIO(response.content)
@@ -53,7 +53,7 @@ def index():
             download_name="speech.mp3"
         )
 
-    return render_template("index.html")
+    return render_template("txtvoi.html")
 
 
 if __name__ == "__main__":
