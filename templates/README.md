@@ -22,18 +22,15 @@ The implementation follows the **Day 4** task requirement of combining narrative
 
 ## File Structure
 
-project-root/
-│
-├── Elevenlabs.py # Flask route for ElevenLabs API
-├── Runwayml.py # Flask route for RunwayML API
-├── Gemini.py # Flask route for Gemini API
-│
-├── templates/
-│ ├── Elevenlabs.html # HTML UI for ElevenLabs integration
-│ ├── Runwayml.html # HTML UI for RunwayML integration
-│ ├── Gemini.html # HTML UI for Gemini integration
-│
-└── README.md # Project documentation
+project-root/│
+Elevenlabs.py # Flask route for ElevenLabs API
+Runwayml.py # Flask route for RunwayML API
+Gemini.py # Flask route for Gemini API
+templates/
+Elevenlabs.html # HTML UI for ElevenLabs integration
+Runwayml.html # HTML UI for RunwayML integration
+Gemini.html # HTML UI for Gemini integration
+README.md # Project documentation
 
 
 
@@ -63,30 +60,30 @@ project-root/
    cd your-repo
 
 2. Install dependencies:
-pip install flask requests
+   pip install flask requests
 
 3. Add your API keys:
 
-Open the Python files (Elevenlabs.py, Runwayml.py, Gemini.py)
+   Open the Python files (Elevenlabs.py, Runwayml.py, Gemini.py)
 
-Replace the placeholder API keys with your actual keys.
+   Replace the placeholder API keys with your actual keys.
 
 4. Run the Flask app:
 
-python Elevenlabs.py
-python Runwayml.py
-python Gemini.py
+   python Elevenlabs.py
+   python Runwayml.py
+   python Gemini.py
 
-(Each API can be run separately depending on your need.)
+   (Each API can be run separately depending on your need.)
 
 5. Open in browser:
 
-Go to http://127.0.0.1:5000/ for ElevenLabs
+   Go to http://127.0.0.1:5000/ for ElevenLabs
 
-Go to http://127.0.0.1:5001/ for RunwayML
+   Go to http://127.0.0.1:5001/ for RunwayML
 
-Go to http://127.0.0.1:5002/ for Gemini
-(Port numbers may vary based on your configuration.)
+   Go to http://127.0.0.1:5002/ for Gemini
+   (Port numbers may vary based on your configuration.)
 
 Evaluation Criteria (Task Requirement)
 
