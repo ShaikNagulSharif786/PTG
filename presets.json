@@ -1,0 +1,98 @@
+{
+  "instagram_reel": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "strategy": "cover",
+    "vcodec": "libx264",
+    "pix_fmt": "yuv420p",
+    "profile": "high",
+    "encode": {
+      "mode": "bitrate",
+      "video_bitrate": "6000k",
+      "x264_preset": "medium"
+    },
+    "audio_bitrate": "128k",
+    "container": "mp4"
+  },
+  "tiktok_vertical": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "strategy": "cover",
+    "vcodec": "libx264",
+    "pix_fmt": "yuv420p",
+    "profile": "high",
+    "encode": {
+      "mode": "bitrate",
+      "video_bitrate": "6000k",
+      "x264_preset": "medium"
+    },
+    "audio_bitrate": "128k",
+    "container": "mp4"
+  },
+  "youtube_short": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "strategy": "cover",
+    "vcodec": "libx264",
+    "pix_fmt": "yuv420p",
+    "profile": "high",
+    "encode": {
+      "mode": "crf",
+      "crf": 20,
+      "x264_preset": "medium"
+    },
+    "audio_bitrate": "160k",
+    "container": "mp4"
+  },
+  "youtube_1080p": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "strategy": "cover",
+    "vcodec": "libx264",
+    "pix_fmt": "yuv420p",
+    "profile": "high",
+    "encode": {
+      "mode": "crf",
+      "crf": 19,
+      "x264_preset": "slow"
+    },
+    "audio_bitrate": "192k",
+    "container": "mp4"
+  },
+  "linkedin_landscape": {
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "strategy": "cover",
+    "vcodec": "libx264",
+    "pix_fmt": "yuv420p",
+    "profile": "high",
+    "encode": {
+      "mode": "bitrate",
+      "video_bitrate": "5000k",
+      "x264_preset": "medium"
+    },
+    "audio_bitrate": "128k",
+    "container": "mp4"
+  },
+  "twitter_square": {
+    "width": 720,
+    "height": 720,
+    "fps": 30,
+    "strategy": "cover",
+    "vcodec": "libx264",
+    "pix_fmt": "yuv420p",
+    "profile": "high",
+    "encode": {
+      "mode": "bitrate",
+      "video_bitrate": "3500k",
+      "x264_preset": "medium"
+    },
+    "audio_bitrate": "128k",
+    "container": "mp4"
+  }
+}
